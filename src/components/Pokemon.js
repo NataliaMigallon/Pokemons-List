@@ -5,9 +5,9 @@ import PropTypes from "prop-types";
 const Pokemon = (props) => {
   const [favColor, setFavColor] = useState("");
 
-  const handleClick = (props) => {
+  const handleClick = () => {
     props.handleFavorites(props.id);
-    if (favColor === -1) {
+    if (favColor === "") {
       return setFavColor("favorite");
     } else {
       return setFavColor("");
@@ -22,7 +22,7 @@ const Pokemon = (props) => {
     );
   });
   return (
-    <article className="pokemon" id={props.id} onChange={handleClick}>
+    <article className={`pokemon ${favColor}`} id={props.id} onClick={handleClick}>
       <img
         className="pokemon__img"
         src={props.itemPoke.url}

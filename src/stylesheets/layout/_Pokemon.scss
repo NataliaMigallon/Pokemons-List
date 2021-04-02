@@ -4,27 +4,28 @@
   align-items: center;
   border: solid black 2px;
   border-radius: 20px;
+  background-color: white;
   padding: 10px;
   margin: 30px;
   width: 180px;
   height: 250px;
   &__img {
-    border: solid red 2px;
+    border: solid yellow 2px;
     border-radius: 20px;
     background-color: pink;
     margin: 10px 0 10px 0;
   }
   &__name {
     text-transform: uppercase;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-family: "Concert One", cursive;
   }
   &__evolution {
     text-transform: capitalize;
     color: grey;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 6px;
   }
   &__type {
     display: flex;
@@ -32,6 +33,7 @@
     text-transform: capitalize;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
+    margin-top: 12px;
     &--item {
       background-color: lightseagreen;
       border-radius: 5px;
@@ -44,4 +46,5 @@
 .favorite {
   border: 3px solid red;
   background-color: rgba(243, 226, 255, 0.5);
+  transform: scale(1.1);
 }
